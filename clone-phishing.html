@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Phishing Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="back-nav">
+                    <a href="index.html#slide3" class="back-button">
+                        <i class="fas fa-arrow-left"></i> Back to Presentation
+                    </a>
+                </div>
+                <h1><i class="fas fa-copy"></i> Clone Phishing Analysis</h1>
+                <p>Understanding and detecting duplicated email attacks</p>
+            </div>
+        </header>
+
+        <main class="content-section">
+            <section class="info-section">
+                <h2>What is Clone Phishing?</h2>
+                <p>Clone phishing is a sophisticated attack where scammers create an exact or nearly exact copy of a legitimate email, replacing original links or attachments with malicious ones.</p>
+                
+                <div class="warning-box">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Clone phishing is particularly dangerous because the emails appear to come from trusted sources and may reference legitimate previous communications.</p>
+                </div>
+            </section>
+
+            <section class="attack-mechanics">
+                <h2>How Clone Phishing Works</h2>
+                <div class="mechanics-grid">
+                    <div class="mechanic-card">
+                        <i class="fas fa-search"></i>
+                        <h3>1. Identification</h3>
+                        <p>Attackers identify legitimate emails sent to victims</p>
+                    </div>
+                    <div class="mechanic-card">
+                        <i class="fas fa-clone"></i>
+                        <h3>2. Replication</h3>
+                        <p>Create exact copies of legitimate emails</p>
+                    </div>
+                    <div class="mechanic-card">
+                        <i class="fas fa-edit"></i>
+                        <h3>3. Modification</h3>
+                        <p>Replace legitimate links with malicious ones</p>
+                    </div>
+                    <div class="mechanic-card">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>4. Distribution</h3>
+                        <p>Send modified copies to targeted recipients</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="common-scenarios">
+                <h2>Common Clone Phishing Scenarios</h2>
+                <div class="scenarios-container">
+                    <div class="scenario-card">
+                        <div class="scenario-header">
+                            <i class="fas fa-file-invoice"></i>
+                            <h3>Invoice Updates</h3>
+                        </div>
+                        <div class="scenario-content">
+                            <p>"Updated invoice for your recent purchase..."</p>
+                            <ul class="scenario-points">
+                                <li>Copies of real invoice emails</li>
+                                <li>Modified payment links</li>
+                                <li>Urgent payment requests</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="scenario-card">
+                        <div class="scenario-header">
+                            <i class="fas fa-cloud-download-alt"></i>
+                            <h3>File Sharing</h3>
+                        </div>
+                        <div class="scenario-content">
+                            <p>"Document has been shared with you again..."</p>
+                            <ul class="scenario-points">
+                                <li>Fake cloud storage notifications</li>
+                                <li>Malicious download links</li>
+                                <li>Credential theft attempts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="scenario-card">
+                        <div class="scenario-header">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>Shipping Updates</h3>
+                        </div>
+                        <div class="scenario-content">
+                            <p>"Updated tracking information for your package..."</p>
+                            <ul class="scenario-points">
+                                <li>Copied shipping notifications</li>
+                                <li>Modified tracking links</li>
+                                <li>Fake delivery forms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detection-guide">
+                <h2>How to Detect Clone Phishing</h2>
+                <div class="detection-steps">
+                    <div class="detection-item">
+                        <div class="detection-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="detection-content">
+                            <h3>Check Sender Details</h3>
+                            <ul>
+                                <li>Verify exact email address</li>
+                                <li>Look for slight variations in domain</li>
+                                <li>Check email headers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detection-item">
+                        <div class="detection-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="detection-content">
+                            <h3>Examine Links</h3>
+                            <ul>
+                                <li>Hover over links before clicking</li>
+                                <li>Check for misspelled URLs</li>
+                                <li>Verify HTTPS certificates</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detection-item">
+                        <div class="detection-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="detection-content">
+                            <h3>Question Timing</h3>
+                            <ul>
+                                <li>Unexpected duplicate emails</li>
+                                <li>Unusual timing of messages</li>
+                                <li>Urgency in resent emails</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="protection-measures">
+                <h2>Protection Against Clone Phishing</h2>
+                <div class="measures-grid">
+                    <div class="measure-card">
+                        <div class="measure-number">1</div>
+                        <div class="measure-content">
+                            <h3>Enable Email Authentication</h3>
+                            <p>Use SPF, DKIM, and DMARC to verify email authenticity</p>
+                        </div>
+                    </div>
+                    <div class="measure-card">
+                        <div class="measure-number">2</div>
+                        <div class="measure-content">
+                            <h3>Implement 2FA</h3>
+                            <p>Use two-factor authentication for all accounts</p>
+                        </div>
+                    </div>
+                    <div class="measure-card">
+                        <div class="measure-number">3</div>
+                        <div class="measure-content">
+                            <h3>Verify Independently</h3>
+                            <p>Contact senders through known channels to confirm unusual requests</p>
+                        </div>
+                    </div>
+                    <div class="measure-card">
+                        <div class="measure-number">4</div>
+                        <div class="measure-content">
+                            <h3>Use Email Filters</h3>
+                            <p>Configure strong spam filters and security rules</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="example-analysis">
+                <h2>Clone Email Analysis</h2>
+                <div class="example-container">
+                    <div class="email-comparison">
+                        <div class="original-email">
+                            <h3>Original Email</h3>
+                            <div class="email-content">
+                                <p class="email-header">From: service@legitimate-company.com</p>
+                                <p class="email-subject">Subject: Your Invoice #12345</p>
+                                <p class="email-body">Click here to view your invoice: [Legitimate Link]</p>
+                            </div>
+                        </div>
+                        <div class="cloned-email">
+                            <h3>Cloned Email</h3>
+                            <div class="email-content suspicious">
+                                <p class="email-header">From: service@legitmate-company.com</p>
+                                <p class="email-subject">Subject: Re: Your Invoice #12345</p>
+                                <p class="email-body">Click here to view your invoice: [Malicious Link]</p>
+                            </div>
+                            <div class="differences">
+                                <h4>Spot the Differences:</h4>
+                                <ul>
+                                    <li>Misspelled domain name</li>
+                                    <li>Added "Re:" in subject</li>
+                                    <li>Different link destination</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Stay protected against sophisticated clone phishing attacks</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link"><i class="fas fa-shield-alt"></i> Security Tips</a>
+                    <a href="#" class="footer-link"><i class="fas fa-book"></i> Resources</a>
+                    <a href="#" class="footer-link"><i class="fas fa-exclamation-circle"></i> Report Phishing</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

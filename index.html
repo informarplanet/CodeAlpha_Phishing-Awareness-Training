@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="presentation-container">
+        <div class="slide" id="slide1" data-aos="fade-up">
+            <h1>Phishing Awareness Training</h1>
+            <div class="icon-container">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <p class="subtitle">Protecting Yourself in the Digital World</p>
+        </div>
+
+        <div class="slide" id="slide2" data-aos="fade-up">
+            <h2>What is Phishing?</h2>
+            <div class="content-box">
+                <i class="fas fa-fish"></i>
+                <p>A cyber attack that uses disguised email, websites, or messages to steal personal information</p>
+            </div>
+            <div class="stats" data-aos="fade-right">
+                <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <p>83% of organizations experienced phishing attacks in 2022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide3">
+            <h2>Common Types of Phishing</h2>
+            <div class="phishing-types-container">
+                <div class="phishing-card" data-type="email">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Phishing</h3>
+                            <p>Mass-distributed fraudulent emails</p>
+                            <span class="flip-prompt">Click to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Email Phishing</h3>
+                            <ul class="features-list">
+                                <li>Generic greetings</li>
+                                <li>Urgency or threats</li>
+                                <li>Suspicious attachments</li>
+                                <li>Poor grammar</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-text">"Dear User, Your account will be suspended. Click here to verify..."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phishing-card" data-type="spear">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-user-secret"></i>
+                            <h3>Spear Phishing</h3>
+                            <p>Targeted attacks using personal info</p>
+                            <span class="flip-prompt">Click to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Spear Phishing</h3>
+                            <ul class="features-list">
+                                <li>Personalized content</li>
+                                <li>Company information</li>
+                                <li>Role-specific details</li>
+                                <li>Social engineering</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-text">"Hi [Name], Regarding the recent project meeting..."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phishing-card" data-type="whaling">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-crown"></i>
+                            <h3>Whaling</h3>
+                            <p>Targeting high-level executives</p>
+                            <span class="flip-prompt">Click to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Whaling</h3>
+                            <ul class="features-list">
+                                <li>Executive impersonation</li>
+                                <li>Financial requests</li>
+                                <li>Confidential matters</li>
+                                <li>Authority abuse</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-text">"From CEO: Urgent wire transfer needed for acquisition..."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phishing-card" data-type="smishing">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Smishing</h3>
+                            <p>SMS-based phishing attacks</p>
+                            <span class="flip-prompt">Click to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Smishing</h3>
+                            <ul class="features-list">
+                                <li>SMS delivery notices</li>
+                                <li>Bank alerts</li>
+                                <li>Prize notifications</li>
+                                <li>Short URLs</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-text">"Your package is held. Click link to schedule delivery..."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phishing-card" data-type="vishing">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Vishing</h3>
+                            <p>Voice phishing calls</p>
+                            <span class="flip-prompt">Click to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Vishing</h3>
+                            <ul class="features-list">
+                                <li>Tech support scams</li>
+                                <li>Bank fraud alerts</li>
+                                <li>Government impersonation</li>
+                                <li>Automated calls</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-text">"This is tech support. Your computer has been compromised..."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phishing-card" data-type="clone">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fas fa-copy"></i>
+                            <h3>Clone Phishing</h3>
+                            <p>Duplicating legitimate emails</p>
+                            <span class="flip-prompt">Click to learn more</span>
+                        </div>
+                        <div class="card-back">
+                            <h3>Clone Phishing</h3>
+                            <ul class="features-list">
+                                <li>Copied legitimate emails</li>
+                                <li>Modified attachments</li>
+                                <li>Similar sender address</li>
+                                <li>Updated links</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-text">"Re: Updated Document - Please review the changes..."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide4">
+            <h2>Red Flags to Watch For</h2>
+            <div class="red-flags-container">
+                <div class="red-flag" data-flag="urgent">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>Urgent or Threatening Language</h3>
+                    <p>Messages creating pressure to act quickly</p>
+                    <button class="details-btn">View Details</button>
+                </div>
+                <div class="red-flag" data-flag="personal">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>Requests for Personal Information</h3>
+                    <p>Asking for sensitive data or credentials</p>
+                    <button class="details-btn">View Details</button>
+                </div>
+                <div class="red-flag" data-flag="mismatch">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Mismatched Email Addresses</h3>
+                    <p>Sender address doesn't match display name</p>
+                    <button class="details-btn">View Details</button>
+                </div>
+                <div class="red-flag" data-flag="grammar">
+                    <i class="fas fa-spell-check"></i>
+                    <h3>Poor Grammar and Spelling</h3>
+                    <p>Obvious spelling and grammatical errors</p>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Modal Popup -->
+            <div class="modal" id="flagModal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <div class="modal-header">
+                        <i class="modal-icon"></i>
+                        <h2 class="modal-title"></h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="example-section">
+                            <h3>Example:</h3>
+                            <div class="example-content"></div>
+                        </div>
+                        <div class="why-dangerous">
+                            <h3>Why It's Dangerous:</h3>
+                            <ul class="danger-list"></ul>
+                        </div>
+                        <div class="how-to-spot">
+                            <h3>How to Spot It:</h3>
+                            <ul class="spot-list"></ul>
+                        </div>
+                        <div class="what-to-do">
+                            <h3>What to Do:</h3>
+                            <ul class="action-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide5">
+            <h2>Best Practices for Email Security</h2>
+            <div class="best-practices-container">
+                <div class="practice-card" data-practice="verify-sender">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3>Verify Sender Emails</h3>
+                    <p>Check email addresses thoroughly</p>
+                    <button class="practice-details-btn">Learn More</button>
+                </div>
+                <div class="practice-card" data-practice="multi-factor">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Use Multi-Factor Authentication</h3>
+                    <p>Add extra layers of security</p>
+                    <button class="practice-details-btn">Learn More</button>
+                </div>
+                <div class="practice-card" data-practice="updates">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Keep Systems Updated</h3>
+                    <p>Maintain latest security patches</p>
+                    <button class="practice-details-btn">Learn More</button>
+                </div>
+                <div class="practice-card" data-practice="report">
+                    <i class="fas fa-flag"></i>
+                    <h3>Report Suspicious Emails</h3>
+                    <p>Help protect your organization</p>
+                    <button class="practice-details-btn">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Best Practices Modal -->
+            <div class="modal" id="practicesModal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <div class="modal-header">
+                        <i class="modal-icon"></i>
+                        <h2 class="modal-title"></h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="practice-description"></div>
+                        <div class="steps-section">
+                            <h3>Key Steps:</h3>
+                            <ul class="steps-list"></ul>
+                        </div>
+                        <div class="tools-section">
+                            <h3>Recommended Tools:</h3>
+                            <ul class="tools-list"></ul>
+                        </div>
+                        <div class="tips-section">
+                            <h3>Pro Tips:</h3>
+                            <ul class="tips-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide6">
+            <h2>What to Do If You're a Victim</h2>
+            <div class="response-steps-container">
+                <div class="response-card" data-response="passwords">
+                    <i class="fas fa-key"></i>
+                    <h3>Change Passwords Immediately</h3>
+                    <p>Update all account credentials</p>
+                    <button class="response-details-btn">View Steps</button>
+                </div>
+                <div class="response-card" data-response="report-incident">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Report the Incident</h3>
+                    <p>Notify relevant authorities</p>
+                    <button class="response-details-btn">View Steps</button>
+                </div>
+                <div class="response-card" data-response="monitor">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Monitor Your Accounts</h3>
+                    <p>Watch for suspicious activity</p>
+                    <button class="response-details-btn">View Steps</button>
+                </div>
+                <div class="response-card" data-response="prevent">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Prevent Future Attacks</h3>
+                    <p>Strengthen your security</p>
+                    <button class="response-details-btn">View Steps</button>
+                </div>
+            </div>
+
+            <!-- Response Steps Modal -->
+            <div class="modal" id="responseModal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <div class="modal-header">
+                        <i class="modal-icon"></i>
+                        <h2 class="modal-title"></h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="response-description"></div>
+                        <div class="immediate-actions">
+                            <h3>Immediate Actions:</h3>
+                            <ul class="actions-list"></ul>
+                        </div>
+                        <div class="checklist">
+                            <h3>Action Checklist:</h3>
+                            <div class="checklist-items"></div>
+                        </div>
+                        <div class="resources">
+                            <h3>Helpful Resources:</h3>
+                            <ul class="resources-list"></ul>
+                        </div>
+                        <div class="timeline">
+                            <h3>Timeline:</h3>
+                            <ul class="timeline-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide7" data-aos="fade-up">
+            <h2>Sample Phishing Email</h2>
+            <div class="example-container">
+                <div class="email-example">
+                    <div class="email-header">
+                        <div class="header-item" data-tooltip="Check the sender's email address carefully">
+                            <span class="label">From:</span>
+                            <span class="value">security@yourbank-secure-verify.com</span>
+                            <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        </div>
+                        <div class="header-item" data-tooltip="Urgent subject lines are common in phishing">
+                            <span class="label">Subject:</span>
+                            <span class="value">URGENT: Account Security Breach - Immediate Action Required</span>
+                            <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        </div>
+                        <div class="header-item">
+                            <span class="label">Date:</span>
+                            <span class="value">Jan 18, 2025 10:45 AM</span>
+                        </div>
+                    </div>
+                    <div class="email-body">
+                        <div class="greeting" data-tooltip="Generic greeting instead of your name">
+                            Dear Valued Customer,
+                            <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        </div>
+                        <div class="content">
+                            <p data-tooltip="Creates fear and urgency to make you act quickly">
+                                We have detected unauthorized access attempts on your account. Your account will be suspended within 24 hours unless you verify your identity immediately.
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </p>
+                            <div class="action-button" data-tooltip="Hover to see the real malicious URL">
+                                <a href="#" class="fake-button">
+                                    <i class="fas fa-lock"></i> Verify Account Now
+                                </a>
+                                <div class="hover-reveal">
+                                    Actual URL: http://malicious-site.com/fake-bank/login
+                                </div>
+                            </div>
+                            <div class="footer" data-tooltip="Threatening language to pressure you">
+                                <p>Failure to verify your account will result in immediate suspension of all banking services.</p>
+                                <p>Security Department<br>Your Bank</p>
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="indicators-panel">
+                    <h3><i class="fas fa-search"></i> Phishing Indicators</h3>
+                    <div class="indicator-list">
+                        <div class="indicator" data-target="sender">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Suspicious Sender</h4>
+                            <p>Email domain mimics legitimate bank</p>
+                        </div>
+                        <div class="indicator" data-target="subject">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h4>Urgency</h4>
+                            <p>Creates pressure to act quickly</p>
+                        </div>
+                        <div class="indicator" data-target="greeting">
+                            <i class="fas fa-user"></i>
+                            <h4>Generic Greeting</h4>
+                            <p>Doesn't use your actual name</p>
+                        </div>
+                        <div class="indicator" data-target="link">
+                            <i class="fas fa-link"></i>
+                            <h4>Suspicious Link</h4>
+                            <p>Hover to reveal true destination</p>
+                        </div>
+                    </div>
+                    <div class="analysis-link">
+                        <a href="email-analysis.html" class="analysis-button">
+                            <i class="fas fa-search-plus"></i> View Detailed Analysis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide8">
+            <div class="conclusion-container">
+                <div class="conclusion-header">
+                    <i class="fas fa-shield-alt header-icon animate-pulse"></i>
+                    <h1 class="slide-in-top">Stay Protected, Stay Informed</h1>
+                    <p class="subtitle fade-in">Your first line of defense against phishing attacks</p>
+                </div>
+
+                <div class="key-takeaways">
+                    <h2 class="slide-in-left">Key Takeaways</h2>
+                    <div class="takeaways-grid">
+                        <div class="takeaway-card fade-in">
+                            <div class="takeaway-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Stay Vigilant</h3>
+                            <p>Always verify sender identities and be cautious of unexpected requests</p>
+                        </div>
+                        <div class="takeaway-card fade-in" style="animation-delay: 0.2s;">
+                            <div class="takeaway-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3>Secure Access</h3>
+                            <p>Use strong passwords and enable two-factor authentication</p>
+                        </div>
+                        <div class="takeaway-card fade-in" style="animation-delay: 0.4s;">
+                            <div class="takeaway-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Verify Sources</h3>
+                            <p>Double-check URLs and contact senders through official channels</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-section slide-in-bottom">
+                    <h2>Take Action Now</h2>
+                    <div class="action-buttons">
+                        <a href="#" class="action-button">
+                            <i class="fas fa-book-open"></i>
+                            Learn More
+                        </a>
+                        <a href="#" class="action-button">
+                            <i class="fas fa-user-shield"></i>
+                            Security Tips
+                        </a>
+                        <a href="#" class="action-button">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Report Phishing
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resources-section fade-in">
+                    <h2>Additional Resources</h2>
+                    <div class="resources-grid">
+                        <a href="#" class="resource-link">
+                            <i class="fas fa-graduation-cap"></i>
+                            Training Materials
+                        </a>
+                        <a href="#" class="resource-link">
+                            <i class="fas fa-tools"></i>
+                            Security Tools
+                        </a>
+                        <a href="#" class="resource-link">
+                            <i class="fas fa-hands-helping"></i>
+                            Support Center
+                        </a>
+                    </div>
+                </div>
+
+                <div class="final-message slide-in-bottom">
+                    <p>Remember: Your awareness is the key to preventing phishing attacks</p>
+                    <div class="restart-button">
+                        <a href="#slide1" class="restart-link">
+                            <i class="fas fa-redo"></i>
+                            Restart Presentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button onclick="previousSlide()"><i class="fas fa-arrow-left"></i></button>
+            <button onclick="nextSlide()"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

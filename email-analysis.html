@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Email Analysis</title>
+    <link rel="stylesheet" href="email-analysis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <div class="header-content">
+                <div class="back-nav">
+                    <a href="index.html#slide3" class="back-button">
+                        <i class="fas fa-arrow-left"></i> Back to Presentation
+                    </a>
+                </div>
+                <h1><i class="fas fa-shield-alt"></i> Phishing Email Analysis</h1>
+                <p>Learn to identify suspicious elements in phishing emails</p>
+            </div>
+        </header>
+
+        <div class="email-container">
+            <div class="email-header">
+                <div class="header-item from" data-tooltip="Suspicious sender address mimicking legitimate domain">
+                    <span class="label">From:</span>
+                    <span class="value">security@your-bank.secure-verify.com</span>
+                    <i class="fas fa-exclamation-triangle warning-icon"></i>
+                </div>
+                <div class="header-item subject" data-tooltip="Urgent language to create pressure">
+                    <span class="label">Subject:</span>
+                    <span class="value">URGENT: Your Account Access Will Be Suspended</span>
+                    <i class="fas fa-exclamation-triangle warning-icon"></i>
+                </div>
+                <div class="header-item date">
+                    <span class="label">Date:</span>
+                    <span class="value">Jan 18, 2025 10:45 AM</span>
+                </div>
+            </div>
+
+            <div class="email-body">
+                <div class="greeting" data-tooltip="Generic greeting instead of your name">
+                    Dear Valued Customer,
+                    <i class="fas fa-exclamation-triangle warning-icon"></i>
+                </div>
+
+                <div class="content">
+                    <p data-tooltip="Creates urgency and fear to prompt immediate action">
+                        We have detected suspicious activity on your account. To prevent unauthorized access, your account will be suspended within 24 hours unless you verify your identity immediately.
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                    </p>
+
+                    <div class="action-required" data-tooltip="Threatening consequences to force action">
+                        <p>Required Action:</p>
+                        <ul>
+                            <li>Click the secure verification link below</li>
+                            <li>Confirm your account details</li>
+                            <li>Update your security settings</li>
+                        </ul>
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                    </div>
+
+                    <div class="button-container" data-tooltip="Suspicious link masking malicious website">
+                        <a href="#" class="fake-button">
+                            <i class="fas fa-lock"></i> Secure Account Verification
+                        </a>
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                    </div>
+
+                    <div class="footer" data-tooltip="Fake contact information and pressure tactics">
+                        <p>For your security, please act immediately. Failure to verify your account will result in immediate suspension of all banking services.</p>
+                        <p>Security Department<br>Your Bank Name</p>
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="analysis-panel">
+            <h2><i class="fas fa-search"></i> Phishing Indicators</h2>
+            <div class="indicator-list">
+                <div class="indicator">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Suspicious Sender</h3>
+                    <p>Email domain doesn't match official bank domain</p>
+                </div>
+                <div class="indicator">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>Urgency</h3>
+                    <p>Creates pressure with urgent deadlines</p>
+                </div>
+                <div class="indicator">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Generic Greeting</h3>
+                    <p>Doesn't use your actual name</p>
+                </div>
+                <div class="indicator">
+                    <i class="fas fa-link"></i>
+                    <h3>Suspicious Link</h3>
+                    <p>Hover reveals different destination URL</p>
+                </div>
+                <div class="indicator">
+                    <i class="fas fa-spell-check"></i>
+                    <h3>Poor Grammar</h3>
+                    <p>Contains grammatical errors and typos</p>
+                </div>
+                <div class="indicator">
+                    <i class="fas fa-lock"></i>
+                    <h3>Security Claims</h3>
+                    <p>Overemphasis on security and verification</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips-section">
+            <h2><i class="fas fa-lightbulb"></i> How to Stay Safe</h2>
+            <div class="tips-grid">
+                <div class="tip">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <h3>Hover Before Click</h3>
+                    <p>Always hover over links to see the true destination</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-phone"></i>
+                    <h3>Verify Independently</h3>
+                    <p>Contact your bank through official channels</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Never Share</h3>
+                    <p>Banks never ask for passwords via email</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-clock"></i>
+                    <h3>Take Your Time</h3>
+                    <p>Don't rush decisions about your security</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="email-analysis.js"></script>
+</body>
+</html>

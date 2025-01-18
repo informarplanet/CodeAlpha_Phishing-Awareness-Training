@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Email Compromise Analysis</title>
+    <link rel="stylesheet" href="bec-analysis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="back-nav">
+                    <a href="index.html#slide3" class="back-button">
+                        <i class="fas fa-arrow-left"></i> Back to Presentation
+                    </a>
+                </div>
+                <h1><i class="fas fa-briefcase"></i> Business Email Compromise</h1>
+                <p>Understanding sophisticated financial fraud targeting businesses</p>
+            </div>
+        </header>
+
+        <div class="content-grid">
+            <section class="bec-example">
+                <h2><i class="fas fa-envelope-open-text"></i> BEC Attack Example</h2>
+                <div class="email-thread">
+                    <!-- First Email -->
+                    <div class="email-container">
+                        <div class="email-header" data-tooltip="Compromised or spoofed CEO email">
+                            <div class="header-item">
+                                <span class="label">From:</span>
+                                <span class="value">michael.roberts@company-global.com</span>
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </div>
+                            <div class="header-item">
+                                <span class="label">To:</span>
+                                <span class="value">sarah.finance@company.com</span>
+                            </div>
+                            <div class="header-item" data-tooltip="Urgent financial request">
+                                <span class="label">Subject:</span>
+                                <span class="value">Urgent: Confidential Payment Request</span>
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </div>
+                        </div>
+                        <div class="email-body">
+                            <div class="greeting" data-tooltip="Informal tone from senior executive">
+                                Hi Sarah,
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </div>
+                            <div class="content" data-tooltip="Creates urgency and requests secrecy">
+                                <p>I'm currently in a confidential meeting with potential investors. We need to wire $247,500 immediately to secure a time-sensitive acquisition deal.</p>
+                                <p>This is highly confidential. Please process this wire transfer using the following details:</p>
+                                <div class="wire-details">
+                                    <p>Bank: International Trust Bank</p>
+                                    <p>Account: 2847593021</p>
+                                    <p>Swift: INTRUST447</p>
+                                    <p>Reference: Project Secure 2025</p>
+                                </div>
+                                <p>Need this done ASAP. I'll provide full documentation later today.</p>
+                                <p>Don't discuss this with anyone else for now due to market sensitivity.</p>
+                                <div class="signature">
+                                    <p>Best,<br>
+                                    Michael Roberts<br>
+                                    CEO, Company Global</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="analysis-section">
+                <div class="attack-patterns">
+                    <h2><i class="fas fa-chart-line"></i> Common Attack Patterns</h2>
+                    <div class="pattern-grid">
+                        <div class="pattern-card">
+                            <i class="fas fa-user-tie"></i>
+                            <h3>Executive Impersonation</h3>
+                            <p>Criminals pose as C-level executives to authorize payments</p>
+                        </div>
+                        <div class="pattern-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Time Pressure</h3>
+                            <p>Creates urgency to bypass normal verification procedures</p>
+                        </div>
+                        <div class="pattern-card">
+                            <i class="fas fa-user-secret"></i>
+                            <h3>Confidentiality</h3>
+                            <p>Requests secrecy to prevent verification with colleagues</p>
+                        </div>
+                        <div class="pattern-card">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <h3>Financial Focus</h3>
+                            <p>Targets financial staff with wire transfer requests</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="red-flags">
+                    <h2><i class="fas fa-exclamation-circle"></i> Red Flags</h2>
+                    <div class="flags-list">
+                        <div class="flag-item" data-flag="domain">
+                            <i class="fas fa-globe"></i>
+                            <h3>Domain Variations</h3>
+                            <p>Slightly modified email domains (e.g., company-global.com vs company.com)</p>
+                        </div>
+                        <div class="flag-item" data-flag="urgency">
+                            <i class="fas fa-exclamation"></i>
+                            <h3>Unusual Urgency</h3>
+                            <p>Pressure to act quickly and bypass normal procedures</p>
+                        </div>
+                        <div class="flag-item" data-flag="secrecy">
+                            <i class="fas fa-user-secret"></i>
+                            <h3>Requests for Secrecy</h3>
+                            <p>Instructions not to discuss with others or verify internally</p>
+                        </div>
+                        <div class="flag-item" data-flag="procedure">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h3>Process Violations</h3>
+                            <p>Requests to ignore standard financial procedures</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prevention">
+                    <h2><i class="fas fa-shield-alt"></i> Prevention Measures</h2>
+                    <div class="prevention-grid">
+                        <div class="prevention-card">
+                            <i class="fas fa-check-double"></i>
+                            <h3>Multi-Factor Authentication</h3>
+                            <ul>
+                                <li>Implement MFA for email access</li>
+                                <li>Use digital signatures</li>
+                                <li>Verify through multiple channels</li>
+                            </ul>
+                        </div>
+                        <div class="prevention-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Staff Training</h3>
+                            <ul>
+                                <li>Regular security awareness training</li>
+                                <li>BEC-specific scenario practice</li>
+                                <li>Red flag recognition training</li>
+                            </ul>
+                        </div>
+                        <div class="prevention-card">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>Payment Procedures</h3>
+                            <ul>
+                                <li>Strict verification protocols</li>
+                                <li>Multiple approver requirements</li>
+                                <li>Amount-based authorization levels</li>
+                            </ul>
+                        </div>
+                        <div class="prevention-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Verification Protocol</h3>
+                            <ul>
+                                <li>Call-back verification procedures</li>
+                                <li>Use pre-established contact numbers</li>
+                                <li>Face-to-face confirmation for large transfers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="response-protocol">
+            <h2><i class="fas fa-clipboard-check"></i> Incident Response Protocol</h2>
+            <div class="protocol-steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Immediate Response</h3>
+                    <p>Contact bank immediately to recall transfer if payment was made</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>Report</h3>
+                    <p>File reports with law enforcement and IC3</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Investigate</h3>
+                    <p>Conduct internal investigation and secure compromised accounts</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <h3>Update</h3>
+                    <p>Review and update security protocols and training</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bec-analysis.js"></script>
+</body>
+</html>

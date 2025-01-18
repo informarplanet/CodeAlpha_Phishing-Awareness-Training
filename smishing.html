@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Phishing (Smishing) Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="back-nav">
+                    <a href="index.html#slide3" class="back-button">
+                        <i class="fas fa-arrow-left"></i> Back to Presentation
+                    </a>
+                </div>
+                <h1><i class="fas fa-mobile-alt"></i> SMS Phishing Analysis</h1>
+                <p>Understanding and protecting against SMS-based phishing attacks</p>
+            </div>
+        </header>
+
+        <main class="content-section">
+            <section class="info-section">
+                <h2>What is Smishing?</h2>
+                <p>Smishing (SMS Phishing) is a form of phishing that uses text messages to deceive recipients into sharing sensitive information or downloading malware.</p>
+                
+                <div class="warning-box">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>SMS messages feel more personal and urgent, making them particularly effective for scammers.</p>
+                </div>
+            </section>
+
+            <section class="common-tactics">
+                <h2>Common Smishing Tactics</h2>
+                <div class="tactics-grid">
+                    <div class="tactic-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Delivery Notifications</h3>
+                        <p>"Your package is held. Click here to schedule delivery..."</p>
+                    </div>
+                    <div class="tactic-card">
+                        <i class="fas fa-university"></i>
+                        <h3>Bank Alerts</h3>
+                        <p>"Suspicious activity detected on your account. Verify now..."</p>
+                    </div>
+                    <div class="tactic-card">
+                        <i class="fas fa-gift"></i>
+                        <h3>Prize Notifications</h3>
+                        <p>"Congratulations! You've won. Click to claim your prize..."</p>
+                    </div>
+                    <div class="tactic-card">
+                        <i class="fas fa-virus"></i>
+                        <h3>COVID-19 Updates</h3>
+                        <p>"Update your COVID status for benefits. Register here..."</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="red-flags">
+                <h2>Red Flags to Watch For</h2>
+                <div class="flags-container">
+                    <div class="flag-item">
+                        <i class="fas fa-link"></i>
+                        <div class="flag-content">
+                            <h3>Shortened URLs</h3>
+                            <p>Suspicious links that hide their true destination</p>
+                        </div>
+                    </div>
+                    <div class="flag-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="flag-content">
+                            <h3>Urgency</h3>
+                            <p>Messages creating pressure to act quickly</p>
+                        </div>
+                    </div>
+                    <div class="flag-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="flag-content">
+                            <h3>Unknown Numbers</h3>
+                            <p>Messages from unfamiliar or suspicious phone numbers</p>
+                        </div>
+                    </div>
+                    <div class="flag-item">
+                        <i class="fas fa-exclamation"></i>
+                        <div class="flag-content">
+                            <h3>Poor Grammar</h3>
+                            <p>Spelling mistakes and awkward language</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="protection-steps">
+                <h2>How to Protect Yourself</h2>
+                <div class="steps-container">
+                    <div class="protection-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Never Click Unknown Links</h3>
+                            <p>Avoid clicking on links in text messages from unknown senders</p>
+                        </div>
+                    </div>
+                    <div class="protection-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Verify Independently</h3>
+                            <p>Contact companies directly using official contact information</p>
+                        </div>
+                    </div>
+                    <div class="protection-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Block Suspicious Numbers</h3>
+                            <p>Use your phone's blocking features for suspicious senders</p>
+                        </div>
+                    </div>
+                    <div class="protection-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Report Smishing</h3>
+                            <p>Forward suspicious texts to your carrier's spam reporting number</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="real-examples">
+                <h2>Real-World Examples</h2>
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="example-header">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>Delivery Scam</h3>
+                        </div>
+                        <div class="example-content">
+                            <p class="message">"FedEx: Your package is pending. Update delivery preferences: bit.ly/12345"</p>
+                            <div class="analysis">
+                                <h4>Why it's suspicious:</h4>
+                                <ul>
+                                    <li>Shortened URL</li>
+                                    <li>Generic greeting</li>
+                                    <li>Creates urgency</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-card">
+                        <div class="example-header">
+                            <i class="fas fa-credit-card"></i>
+                            <h3>Bank Alert Scam</h3>
+                        </div>
+                        <div class="example-content">
+                            <p class="message">"ALERT: Your account has been suspended. Verify now: secure-bank-verify.com"</p>
+                            <div class="analysis">
+                                <h4>Why it's suspicious:</h4>
+                                <ul>
+                                    <li>Suspicious domain</li>
+                                    <li>Urgent language</li>
+                                    <li>Threatens account access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Stay informed about the latest phishing threats and protection strategies</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link"><i class="fas fa-shield-alt"></i> Security Tips</a>
+                    <a href="#" class="footer-link"><i class="fas fa-book"></i> Resources</a>
+                    <a href="#" class="footer-link"><i class="fas fa-exclamation-circle"></i> Report Phishing</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

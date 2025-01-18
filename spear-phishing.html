@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spear Phishing Analysis</title>
+    <link rel="stylesheet" href="spear-phishing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="back-nav">
+                    <a href="index.html#slide3" class="back-button">
+                        <i class="fas fa-arrow-left"></i> Back to Presentation
+                    </a>
+                </div>
+                <h1><i class="fas fa-crosshairs"></i> Spear Phishing Analysis</h1>
+                <p>Learn how targeted phishing attacks work and how to protect yourself</p>
+            </div>
+        </header>
+
+        <div class="content-grid">
+            <div class="example-section">
+                <h2><i class="fas fa-envelope"></i> Example Spear Phishing Email</h2>
+                <div class="email-container">
+                    <div class="email-header">
+                        <div class="header-item" data-tooltip="Personalized sender using company research">
+                            <span class="label">From:</span>
+                            <span class="value">jennifer.smith@tech-innovations-corp.com</span>
+                            <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        </div>
+                        <div class="header-item" data-tooltip="References real project or context">
+                            <span class="label">Subject:</span>
+                            <span class="value">RE: Q4 Project Timeline Update - Action Required</span>
+                            <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        </div>
+                        <div class="header-item">
+                            <span class="label">To:</span>
+                            <span class="value">david.wilson@company.com</span>
+                        </div>
+                    </div>
+                    <div class="email-body">
+                        <div class="greeting" data-tooltip="Uses your actual name from social media">
+                            Hi David,
+                            <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        </div>
+                        <div class="content">
+                            <p data-tooltip="References specific company details">
+                                I hope you're doing well. I'm following up on the Q4 project timeline we discussed during last week's virtual team meeting. As the new project coordinator for the Cloud Migration Initiative, I need your immediate input on the updated timeline.
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </p>
+                            <p data-tooltip="Creates urgency with business context">
+                                The executive team needs these updates before tomorrow's board meeting. Could you please review and sign off on the attached document using your corporate credentials?
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </p>
+                            <div class="attachment" data-tooltip="Malicious file disguised as legitimate document">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Q4_Timeline_Review.pdf</span>
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </div>
+                            <div class="signature" data-tooltip="Mimics real corporate signature format">
+                                <p>Best regards,<br>
+                                Jennifer Smith<br>
+                                Project Coordinator<br>
+                                Tech Innovations Corp</p>
+                                <i class="fas fa-exclamation-triangle warning-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analysis-section">
+                <div class="characteristics">
+                    <h2><i class="fas fa-fingerprint"></i> Key Characteristics</h2>
+                    <div class="characteristic-grid">
+                        <div class="characteristic-card">
+                            <i class="fas fa-user-tie"></i>
+                            <h3>Targeted Research</h3>
+                            <p>Uses information gathered from social media and company websites</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <i class="fas fa-building"></i>
+                            <h3>Company Context</h3>
+                            <p>References real projects, meetings, and business processes</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Timely Pressure</h3>
+                            <p>Creates urgency using business-relevant deadlines</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>Legitimate Looking</h3>
+                            <p>Mimics corporate communication styles and formats</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indicators">
+                    <h2><i class="fas fa-search"></i> Warning Signs</h2>
+                    <div class="indicator-list">
+                        <div class="indicator">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Sender Verification</h3>
+                            <p>Check email headers and domain carefully - attackers often use similar-looking domains</p>
+                        </div>
+                        <div class="indicator">
+                            <i class="fas fa-comments"></i>
+                            <h3>Unexpected Communication</h3>
+                            <p>Verify through other channels if you receive unexpected requests for sensitive information</p>
+                        </div>
+                        <div class="indicator">
+                            <i class="fas fa-lock"></i>
+                            <h3>Credential Requests</h3>
+                            <p>Be suspicious of any email asking for login credentials or sensitive data</p>
+                        </div>
+                        <div class="indicator">
+                            <i class="fas fa-file-download"></i>
+                            <h3>Attachments</h3>
+                            <p>Scan attachments and verify sender before opening any files</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="protection-tips">
+                    <h2><i class="fas fa-shield-alt"></i> Protection Measures</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Verify Independently</h3>
+                            <p>Contact the sender through a known phone number or in person</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-user-shield"></i>
+                            <h3>Limited Information</h3>
+                            <p>Minimize personal and professional information shared online</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Training</h3>
+                            <p>Participate in regular security awareness training</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-lock"></i>
+                            <h3>Multi-Factor</h3>
+                            <p>Enable multi-factor authentication on all accounts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="spear-phishing.js"></script>
+</body>
+</html>
