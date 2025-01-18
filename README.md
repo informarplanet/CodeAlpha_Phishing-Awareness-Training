@@ -2,6 +2,10 @@
 
 An interactive web-based platform designed to educate users about various types of phishing attacks and provide comprehensive protection strategies.
 
+## Link to the Live Demo
+
+[Phishing Awareness Training](https://informarplanet.github.io/CodeAlpha_Phishing-Awareness-Training/)
+
 ## 🚀 Features
 
 ### Interactive Presentation
